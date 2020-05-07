@@ -1,0 +1,16 @@
+{
+  "name": "jaunecongo",
+  "version": "1.0.0",
+  "description": "site web reproduction",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ksthray or camille",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "nunjucks": "^3.2.1"
+  }
+}
