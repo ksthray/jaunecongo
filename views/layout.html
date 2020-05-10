@@ -9,17 +9,293 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="" style="width: 100%;">
       <header class="header">
-        <h1>Jaune congo</h1>
+        <div class="container-fluid contain-1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 nav-logo">
+                <h5>Cultivons un autre monde !</h5>
+              </div>
+              <div class="col-md-9 nav-ul">
+                <ul>
+                  <li>infos qualité</li>
+                  <li>infos livraisons</li>
+                  <li>infos paiements</li>
+                  <li class="icons"><i class="fab fa-facebook-f"></i></li>
+                  <li class="icons"><i class="fab fa-instagram"></i></li>
+                  <li class="icons"><i class="far fa-envelope"></i></li>
+                  <li class="icons"><i class="fas fa-phone-alt"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row contain-2">
+          <div class="col-md-3 logo-nav">
+            <img src="./images/logojaunec.jpg" alt="" />
+          </div>
+          <div class="col-md-6">
+            <ul class="ul-center">
+              <li>Legumes</li>
+              <li>Fruis</li>
+              <li>Herbe anarmatique</li>
+              <li>Panier hebdomadaire</li>
+              <li>
+                Plus<i
+                  style="position: relative; left: 10px;"
+                  class="fas fa-angle-down"
+                ></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="ul-end">
+              <li class="connexion">Connexion</li>
+              <li>Paniers</li>
+            </ul>
+          </div>
+        </div>
       </header>
-      <hr />
-      {% block content %} {% endblock %}
-      <hr />
-      <div class="footer text-center">
-        Copyright App bureau fait par Camille Kongolo
-      </div>
+      <main>
+        <div class="row">
+          <div class="jumbotron">
+            <div class="jaunecongo-logo">
+              <img src="./images/logojaunec.jpg" alt="" />
+            </div>
+            <p class="message">
+              Chez nous, vous êtes « satisfait ou remboursé »!
+            </p>
+            <div class="container">
+              <div class="row contenu-card">
+                <div class="col-md-3 card-left">
+                  <div class="row">
+                    <img src="./images/jaunecongo2.jpg" alt="" />
+                  </div>
+                  <br />
+                  <div class="row">
+                    <img src="./images/jaunecongo3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="jumbotron-center"></div>
+                  <div class="contains-para text-center">
+                    <p class="para-1">
+                      Produit de la semaine
+                    </p>
+                    <p>
+                      Pour plus de 15$ de commande nous vous offrons un
+                      demi-kilo de banane douce!
+                    </p>
+                  </div>
+                  <div class="minuteur text-center">
+                    <h5>Attention! Plus que</h5>
+                    <table>
+                      <tr class="infos">
+                        <td id="days"></td>
+                        <td id="hrs"></td>
+                        <td id="min"></td>
+                        <td id="sec"></td>
+                      </tr>
+                      <tr class="date">
+                        <td>JOURS</td>
+                        <td>HEURES</td>
+                        <td>MIN</td>
+                        <td>SEC</td>
+                      </tr>
+                    </table>
+                    <p>
+                      pour commander votre dose hebdomadaire de vitamines!
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-3 card-right">
+                  <div class="row">
+                    <img src="./images/jaunecongo3.jpg" alt="" />
+                  </div>
+                  <br />
+                  <div class="row">
+                    <img src="./images/jaunecongo2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <section class="section-1">
+        {% block content %} {% endblock %}
+      </section>
+      <section class="container-fluid section-2">
+        <div class="container">
+          <ligne-bar slug="Nos produits cette semaine"></ligne-bar>
+          <div class="row card-el">
+            <cards-element
+              image="./images/jaunecongo3.jpg"
+              title="Parrainage – gagnez 5$!"
+              description="et votre ami recevra un courriel contenant un coupon de 20% pour sa première commande. Une fois celle-ci effectuée vous recevrez à votre tour un courriel contenant un coupon de 5$ pour votre prochaine commande de vitamines!"
+              links="Parainnage"
+            ></cards-element>
+            <cards-element
+              image="./images/jaunecongo2.jpg"
+              title="Rabais fidélités – jusqu’à 10% sur toutes vos commandes!!"
+              description="Rabais fidélité 1 mois
+                        Si vous avez dépensé plus de 80$ sur notre site
+                        lors des 30 derniers jours, un rabais de 5% sera automatiquement appliqué à votre commande!Rabais
+                        fidélité 3 mois Si vous avez commandé plus de 9 fois sur notre site lors des 3 deniers 
+                        mois un rabais de 5% sera automatiquement appliqué à votre commande!
+                        Ces rabais sont cumulables, mais ils ne peuvent être appliqués qu’aux clients inscrits 
+                        sur le site"
+            ></cards-element>
+            <cards-element
+              image="./images/jaunecongo3.jpg"
+              title="Paniers hebdomadaires – 10% de vitamines en plus!"
+              description="Profitez de 10% minimum de réduction sur vos légumes et fruits en vous abonnant à nos paniers hebdomadaires: vous nous indiquer vos préférences et nous vous livrons chaque semaine des paniers composés par nos soins.
+                        Ce rabais n’est pas cumulable avec les rabais fidélités et paiement par acompte"
+              links="Abonnée vous now"
+            ></cards-element>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid section-3">
+        <div class="container">
+          <ligne-bar slug="Les nouvelles de la ferme"></ligne-bar>
+          <div class="row slide">
+            <div class="col images-slide">
+              <img class="img" src="./images/jaunecongo3.jpg" alt="" />
+              <img class="img" src="./images/jaunecongo2.jpg" alt="" />
+              <img class="img" src="./images/jaunecongo3.jpg" alt="" />
+              <img class="img" src="./images/jaunecongo2.jpg" alt="" />
+              <img class="img" src="./images/jaunecongo3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <form action="" class="formulaire">
+                <div class="form-group">
+                  <h3>
+                    Inscrivez-vous ci-dessous pour être au courant de toutes nos
+                    activités.
+                  </h3>
+                  <label class="adresse" for="inputEmail4"
+                    >Adresse électronique:</label
+                  ><br />
+                  <input
+                    type="email"
+                    class="input-bar"
+                    placeholder="Votre adresse courriel"
+                  />
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" />
+                  <label class="form-check-label" for="defaultCheck1">
+                    Abonnez-vous à notre lettre d'information semestrielle </label
+                  ><br />
+                  <small style="color: rgb(207, 207, 207);"
+                    >Tous les 6 mois, nous vous envoyons des informations sur
+                    JauneCongo, notre équipe et nos méthodes de travailz</small
+                  >
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" />
+                  <label class="form-check-label" for="defaultCheck1">
+                    Abonnez-vous à notre courriel d'information hebdomadaire </label
+                  ><br />
+                  <small style="color: rgb(207, 207, 207);"
+                    >Toutes les semaines, recevez un courriel vous présentant
+                    les nouveautés et promotions de la semaine
+                  </small>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary">
+                  S'INSCRIRE
+                </button>
+              </form>
+            </div>
+            <div class="col-md-6 contain-icon">
+              <div class="col-md-3">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="col-md-9">
+                <h5>Inscrivez-vous à notre groupe Whatsapp</h5>
+                <small style="color: rgb(207, 207, 207); font-size: 0.9rem;">
+                  Envoyez-nous un message Whatsapp au +243 81 23 25 230 et nous
+                  vous enverrons une invitation à notre groupe Whatsapp.
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br /><br /><br />
+        <div class="bottom container">
+          <h2 class="text-center">
+            Et lisez ou relisez nos lettres d'informations!
+          </h2>
+          <br />
+          <div class="image-bottom">
+            <img src="./images/jaunec1.png" alt="" />
+            <img src="./images/jaunec2.png" alt="" />
+            <img src="./images/jaunec1.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <footer class="footer container-fluid">
+        <div class="container footer-top">
+          <div class="row footer-contains">
+            <div class="col-md-4">
+              <h5>A notre propos</h5>
+              <br />
+              <div class="span"></div>
+              <ul>
+                <li>Notre vision</li>
+                <hr />
+                <li>L'entreprise <i class="fas fa-angle-down"></i></li>
+                <hr />
+                <li>Le context <i class="fas fa-angle-down"></i></li>
+                <hr />
+                <li>
+                  Participer au développement de JauneCongo
+                  <i class="fas fa-angle-down"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Service Client</h5>
+              <br />
+              <div class="span"></div>
+              <ul>
+                <li>Infos qualité</li>
+                <hr />
+                <li>infos livraison</li>
+                <hr />
+                <li>Infos paiement</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Partageons nos recettes !</h5>
+              <br />
+              <div class="span"></div>
+              <ul>
+                <li>Recette et astuces fraicheurs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row container footer-bottom"></div>
+        </div>
+      </footer>
+      <footer class="footer-2 container-fluid">
+        <div class="container footer-bottom">
+          <div class="contains-footer">
+            <small style="color: rgb(156, 156, 156);"
+              >Copyright 2019 ©
+              <strong style="color: white;">JauneCongo</strong> Site créé par
+              Kinshasa Digital et JauneCongo</small
+            >
+          </div>
+        </div>
+      </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>

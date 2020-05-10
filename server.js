@@ -8,6 +8,7 @@ const app = express();
 app.use("/css", express.static(__dirname + "/node_modules/bootstrap/dist/css"));
 app.use(express.static("views"));
 app.use(express.static(__dirname + "/views/js"));
+app.use(express.static(__dirname + "/views/images"));
 
 nunjucks.configure("views", {
   autoescape: true,
@@ -22,4 +23,7 @@ app.use(bodyParser.json());
 
 app.use("/", cards);
 
-app.listen(8000);
+const PORT = 8000;
+app.listen(PORT, () =>
+  console.log(`le serveur est lancé sur le port : ${PORT}`)
+);

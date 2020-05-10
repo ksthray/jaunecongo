@@ -1,3 +1,37 @@
 {% extends "layout.html" %} {% block content %}
-<h3>YOOOOOOO</h3>
+<div class="container" style="width: 100%;">
+  <ligne-bar slug="Nos produits cette semaine"></ligne-bar>
+  <div class="cards">
+    {% for product in products %}
+    <div class="card text-center" style="width: 250px; height: auto;">
+      <img src="{{product.image}}" class="card-img-top" alt="product images" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.prixKilo}} / {{ product.qteDispo}}</p>
+        <small class="card-text">{{ product.description }}</small>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary btn-bloc">Ajouter au panier</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <br />
+  <div class="cards">
+    {% for product in products %}
+    <div class="card text-center" style="width: 250px; height: auto;">
+      <img src="{{product.image}}" class="card-img-top" alt="product images" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.prixKilo}} / {{ product.qteDispo}}</p>
+        <small class="card-text">{{ product.description }}</small>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary btn-bloc">Ajouter au panier</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <br />
+</div>
 {% endblock %}

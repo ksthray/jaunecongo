@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+}
+/* header top yellow background*/
+.contain-1 {
+  background: rgb(238, 238, 2);
+  height: 50px;
+}
+.nav-logo h5 {
+  font-size: 1.1rem;
+  padding-top: 10px;
+  font-weight: 300;
+}
+.nav-logo h5:hover {
+  cursor: pointer;
+}
+
+.nav-ul ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-ul ul .icons {
+  padding-left: 7px;
+}
+.nav-ul ul .icons:hover {
+  background-color: rgb(238, 238, 2);
+  cursor: auto;
+}
+.contain-1 li {
+  list-style-type: none;
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.contain-1 li:hover {
+  background-color: rgb(211, 211, 2);
+  cursor: pointer;
+}
+
+/* header top second white background*/
+.logo-nav img {
+  width: 130px;
+}
+.logo-nav img:hover {
+  cursor: pointer;
+}
+.contain-2 {
+  padding: 15px 60px;
+  height: 90px;
+}
+.contain-2 ul {
+  display: flex;
+}
+.contain-2 .ul-center li {
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 20px;
+}
+.contain-2 .ul-center li {
+  padding-top: 18px;
+}
+.contain-2 .ul-center li {
+  cursor: pointer;
+}
+
+.contain-2 .ul-end {
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  padding: 0px 10px;
+}
+.contain-2 .ul-end li {
+  padding-top: 18px;
+}
+.contain-2 .ul-end li:hover {
+  cursor: pointer;
+}
+
+/*Landing image background*/
+.jumbotron {
+  background-image: url("../images/spain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.jaunecongo-logo img {
+  width: 250px;
+}
+.jaunecongo-logo {
+  background-color: white;
+  width: 220px;
+  height: 120px;
+  text-align: center;
+  transform: translate(500px, -65px);
+}
+.message {
+  text-align: center;
+  color: white;
+  font-style: italic;
+  position: relative;
+  top: -40px;
+}
+.contenu-card {
+  position: relative;
+  top: -50px;
+}
+.card-left img {
+  width: 250px;
+}
+.card-right img {
+  width: 250px;
+}
+.jumbotron-center {
+  background-image: url("../images/spain.jpg");
+  background-size: cover;
+  height: 190px;
+  opacity: 0.5;
+  z-index: -1;
+}
+.contains-para p:first-child {
+  font-weight: bold;
+  color: white;
+}
+.contains-para p:last-child {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+.contains-para {
+  position: relative;
+  top: -135px;
+  padding: 5px;
+  z-index: 2;
+}
+table {
+  position: relative;
+  left: 130px;
+}
+.minuteur {
+  color: white;
+  position: relative;
+  top: -90px;
+}
+.minuteur h5 {
+  font-weight: bold;
+}
+.minuteur p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 20px;
+}
+.date td {
+  color: white;
+  padding: 5px;
+  font-size: 0.7rem;
+}
+.infos td {
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.section-1 {
+  background-color: rgb(19, 42, 65);
+}
+section {
+  padding: 20px;
+}
+.section-2 {
+  background-color: #123;
+}
+.section-3 {
+  background-color: rgb(19, 42, 65);
+  padding-top: 20px;
+}
+.bar {
+  width: 100%;
+  height: 3px;
+  position: relative;
+  top: 40px;
+  background: yellow;
+}
+.produits {
+  columns: black;
+  width: 360px;
+  padding: 15px;
+  background-color: yellow;
+  font-size: 1.4rem;
+  text-align: center;
+  position: relative;
+  left: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.produits p {
+  font-weight: bold;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  color: #123;
+}
+.cards .image-cards {
+  width: 250px;
+}
+.card {
+  position: relative;
+  top: 20px;
+  border: none !important;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.card-text {
+  font-size: 0.9rem;
+}
+.card-footer {
+  background-color: white;
+  border: none;
+}
+
+.card-el {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: center;
+  justify-content: space-between;
+  color: white;
+}
+.contains-img {
+  padding: 10px;
+}
+.images-slide {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+.images-slide .img {
+  width: 222px;
+  height: 230px;
+}
+.slide {
+  margin-bottom: 20px;
+}
+
+.formulaire {
+  color: white;
+}
+.formulaire h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.formulaire .input-bar {
+  border-radius: none !important;
+  width: 550px;
+  padding-left: 10px;
+  height: 40px;
+}
+.form-check-label .adresse {
+  font-size: 1rem;
+  color: rgb(236, 236, 236);
+  font-weight: 600;
+}
+.contain-icon {
+  display: flex;
+}
+.contain-icon h5 {
+  color: white;
+  font-weight: bold;
+}
+.fa-whatsapp {
+  color: white;
+  font-size: 6rem;
+  position: relative;
+  left: 20px;
+}
+
+.bottom h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.bottom img {
+  width: 250px;
+}
+.image-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer {
+  background-color: #123;
+}
+.footer-2 {
+  background-color: rgb(19, 42, 65);
+}
+.footer-top h5 {
+  color: rgb(231, 231, 231);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.footer-contains {
+  padding: 20px;
+}
+.footer-contains .span {
+  width: 35px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: rgb(97, 97, 97);
+  position: relative;
+  top: -20px;
+}
+.footer-contains ul > li {
+  color: white;
+  list-style-type: none;
+}
+.fa-angle-down {
+  position: relative;
+  left: 50px;
+}
+.footer-contains hr {
+  background: rgb(190, 190, 190);
+}
+.footer-bottom {
+  padding: 20px;
+}
+.contains-footer {
+  width: 300px;
+  text-align: left;
+  letter-spacing: 1px;
+}
